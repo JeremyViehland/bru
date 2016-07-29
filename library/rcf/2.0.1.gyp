@@ -13,7 +13,8 @@
             },
             "defines": [
                 # RCF has a lot of compile time config options, see RCF.cpp, e.g.
-                "RCF_FEATURE_OPENSSL=1"
+                "RCF_FEATURE_OPENSSL=1",
+                "RCF_OPENSSL_STATIC"
                 #"RCF_FEATURE_ZLIB=1"
                 #...
             ],
@@ -33,12 +34,10 @@
                 }],
                 ["OS=='mac'", {
                     "defines": [
-                        "RCF_OPENSSL_STATIC"
                     ]
                 }],
                 ["OS=='iOS'", {
                     "defines": [
-                        "RCF_OPENSSL_STATIC"
                     ]
                 }]
             ],
